@@ -1,0 +1,23 @@
+.status-pill {
+  margin: 16px 0 0;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgb(86 245 210 / 18%);
+  color: #cdfff3;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.status-pill.error {
+  background: rgb(253 118 143 / 20%);
+  color: #ffd7df;
+}
+
+@media (max-width: 480px) {
+  .status-pill {
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+}

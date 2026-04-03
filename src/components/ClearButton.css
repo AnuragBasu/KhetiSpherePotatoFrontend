@@ -1,0 +1,24 @@
+.clear-btn {
+  margin-top: 16px;
+  border: 0;
+  width: 100%;
+  border-radius: 14px;
+  padding: 12px 14px;
+  cursor: pointer;
+  color: #06121f;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: linear-gradient(140deg, #70f4d6, #9df67c);
+}
+
+.clear-btn:hover {
+  filter: brightness(1.05);
+}
+
+@media (max-width: 480px) {
+  .clear-btn {
+    min-height: 44px;
+    border-radius: 12px;
+    font-size: 0.92rem;
+  }
+}

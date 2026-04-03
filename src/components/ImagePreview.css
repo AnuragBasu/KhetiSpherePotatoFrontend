@@ -1,0 +1,42 @@
+.preview-wrap {
+  margin-top: 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 16%);
+}
+
+.preview-image {
+  width: 100%;
+  height: min(48vh, 360px);
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .preview-image {
+    height: min(45vh, 330px);
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-wrap {
+    margin-top: 16px;
+    border-radius: 14px;
+  }
+
+  .preview-image {
+    height: min(40vh, 290px);
+  }
+}
+
+@media (max-width: 480px) {
+  .preview-image {
+    height: min(38vh, 240px);
+  }
+}
+
+@media (max-width: 360px) {
+  .preview-image {
+    height: min(34vh, 200px);
+  }
+}

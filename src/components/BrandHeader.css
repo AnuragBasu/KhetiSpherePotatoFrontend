@@ -1,0 +1,88 @@
+.predictor-header {
+  text-align: center;
+}
+
+.brand-capsule {
+  margin: 0 auto 16px;
+  width: min(100%, 320px);
+  border-radius: 18px;
+  padding: 10px;
+  background: linear-gradient(160deg, rgb(246 253 236 / 98%), rgb(225 239 201 / 96%));
+  border: 1px solid rgb(255 255 255 / 62%);
+  box-shadow:
+    0 10px 22px rgb(0 0 0 / 28%),
+    inset 0 1px 0 rgb(255 255 255 / 70%);
+}
+
+.predictor-card:has(.result-panel) .brand-capsule {
+  display: none;
+}
+
+.brand-image {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.predictor-header h1 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.6vw, 2rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.brand-kicker {
+  margin: 0 0 8px;
+  color: #58f8d3;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.brand-sub {
+  margin: 10px 0 0;
+  color: rgb(241 245 255 / 82%);
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1024px) {
+  .brand-capsule {
+    width: min(100%, 300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-capsule {
+    width: min(100%, 280px);
+  }
+
+  .brand-sub {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-capsule {
+    width: min(100%, 265px);
+    margin-bottom: 12px;
+    padding: 8px;
+  }
+
+  .brand-kicker {
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-capsule {
+    width: min(100%, 235px);
+    border-radius: 14px;
+    padding: 6px;
+  }
+
+  .predictor-header h1 {
+    font-size: clamp(1.2rem, 6vw, 1.45rem);
+  }
+}

@@ -1,0 +1,59 @@
+:root {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: #f5f7ff;
+  background: #0a0d1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(14px, 2.5vw, 24px);
+  background:
+    linear-gradient(155deg, rgb(7 15 23 / 62%), rgb(14 25 19 / 52%)),
+    radial-gradient(circle at 76% 12%, rgb(255 180 96 / 22%), transparent 34%),
+    radial-gradient(circle at 14% 86%, rgb(72 176 118 / 20%), transparent 38%),
+    url("./background image.jpg");
+  background-size:
+    cover,
+    100% 100%,
+    100% 100%,
+    cover;
+  background-position: center, center, center, center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply, screen, soft-light, normal;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    align-items: start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-shell {
+    padding-inline: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .app-shell {
+    padding-inline: 10px;
+    padding-top: 14px;
+  }
+}
